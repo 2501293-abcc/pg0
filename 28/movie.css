@@ -21,7 +21,7 @@ nav ul li a{
 nav li:hover{
     border-bottom: 2px solid rgb(122, 122, 205);
 }
-h1{
+.text{
     text-align: center;
 }
 .content{
