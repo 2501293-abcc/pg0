@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>バレーボール観戦記録</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js" charset="utf-8" type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+    <h1>バレーボール観戦記録</h1>
+  </header>
+
+  <main>
+    <section id="form-section">
+      <h2>観戦記録</h2>
+
+      <label>年月日
+        <input type="date" id="date">
+      </label>
+
+      <label>ホームチーム
+        <select id="home">
+          <option value="">選択してください</option>
+          <option>サントリーサンバーズ大阪</option>
+          <option>大阪ブルテオン</option>
+          <option>ウルフドッグス名古屋</option>
+          <option>東京グレートベアーズ</option>
+          <option>ジェイテクトSTINGS愛知</option>
+          <option>ヴォレアス北海道</option>
+          <option>VC長野トライデンツ</option>
+          <option>東レアローズ静岡</option>
+          <option>日本製鉄堺ブレイザーズ</option>
+          <option>広島サンダーズ</option>
+        </select>
+      </label>
+
+      <label>アウェイチーム
+        <select id="away">
+          <option value="">選択してください</option>
+          <option>サントリーサンバーズ大阪</option>
+          <option>大阪ブルテオン</option>
+          <option>ウルフドッグス名古屋</option>
+          <option>東京グレートベアーズ</option>
+          <option>ジェイテクトSTINGS愛知</option>
+          <option>ヴォレアス北海道</option>
+          <option>VC長野トライデンツ</option>
+          <option>東レアローズ静岡</option>
+          <option>日本製鉄堺ブレイザーズ</option>
+          <option>広島サンダーズ</option>
+        </select>
+      </label>
+
+      <label>会場
+        <input type="text" id="venue">
+      </label>
+
+      <label>スコア(ホーム)
+        <input type="text" id="scoreHome" min="0">
+      </label>
+
+      <label>スコア(アウェイ)
+        <input type="text" id="scoreAway" min="0">
+      </label>
+
+      <label>メモ
+        <textarea id="memo"></textarea>
+      </label>
+
+      <button id="save">保存</button>
+    </section>
+
+    <section id="list-section">
+      <h2>記録一覧</h2>
+      <div id="records"></div>
+    </section>
+  </main>
+
+  <small>2501293 山中優里菜</small>
+</body>
+
+</html>
